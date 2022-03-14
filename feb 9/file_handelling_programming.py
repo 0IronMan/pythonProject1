@@ -124,11 +124,11 @@ path2 = r"C:\Users\sanji\PycharmProjects\pythonProject1\files_directory\txt_log_
 """Wap to print last n line"""
 
 path = r"C:\Users\sanji\PycharmProjects\pythonProject1\files_directory\txt_log_files\sample.txt"
-n = 5
-with open (path) as file:
-    count = 0
-    for line in file:
-        count += 1
-    file.seek(0)
-    res = islice(file, count-n, count)
-    print (res)
+# n = 5
+# with open (path) as file:
+#     count = 0
+#     for line in file:
+#         count += 1
+#     file.seek(0)
+#     res = islice(file, count-n, count)
+#     print (res)

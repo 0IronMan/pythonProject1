@@ -88,17 +88,17 @@ e_path = r"C:\Users\sanji\PycharmProjects\pythonProject1\files_directory\csv_fil
 
 """get the latest updaeted country with its total vaccination and number of people vaccination"""
 
-path = r"C:\Users\sanji\PycharmProjects\pythonProject1\files_directory\csv_files\vaccination_data.csv"
-from collections import defaultdict
-with open(path)as file:
-    r_obj = csv.DictReader(file)
-    header = next(r_obj)
-    d = defaultdict(list)
-    for row in r_obj:
-        d[row["DATE_UPDATED"]]  += [(row["COUNTRY"], row["TOTAL_VACCINATIONS"])]
-
-
-res = sorted(d.items())
-print(res[-1])
-for item in res:
-    print(item)
+# path = r"C:\Users\sanji\PycharmProjects\pythonProject1\files_directory\csv_files\vaccination_data.csv"
+# from collections import defaultdict
+# with open(path)as file:
+#     r_obj = csv.DictReader(file)
+#     header = next(r_obj)
+#     d = defaultdict(list)
+#     for row in r_obj:
+#         d[row["DATE_UPDATED"]]  += [(row["COUNTRY"], row["TOTAL_VACCINATIONS"])]
+#
+#
+# res = sorted(d.items())
+# print(res[-1])
+# for item in res:
+#     print(item)
